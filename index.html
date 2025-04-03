@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glide Smart Glove - Redefining Interaction</title>
+  
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  
+  <!-- Three.js and GSAP Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  
+  <!-- Main Script -->
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Glide Smart Glove</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color:#fff;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#project-overview">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product-showcase">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tech-features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sensors-esp">Sensors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-overlay d-flex align-items-center justify-content-center">
+      <div class="hero-content text-center">
+        <h1 id="glide-title" class="clickable">GLIDE</h1>
+        <h2 class="subtitle mt-3">Control Your Digital World With Natural Movement</h2>
+        <p class="tagline mt-2">Redefining human–computer interaction with futuristic technology.</p>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Project Overview -->
+  <section id="project-overview" class="py-4">
+    <div class="container glass text-center">
+      <h2 class="mb-4">Project Overview</h2>
+      <p>
+        Glide Smart Glove is a revolutionary hands–free mouse system. Using a smart glove embedded with Hall Effect sensors for click detection and an MPU6050 for motion tracking, you can control your computer naturally—without a traditional mouse!
+      </p>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section id="product-showcase" class="py-4">
+    <div class="container glass text-center">
+      <div class="flip-card mx-auto mb-4">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/product.jpg" alt="Product Image" />
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/images/hand-icon.png" alt="Alternate Product Image" />
+          </div>
+        </div>
+      </div>
+      <div class="showcase-text">
+        <h2>Experience Revolutionary Technology</h2>
+        <p>
+          Advanced sensor technology and intuitive gesture recognition let you feel the future at your fingertips.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology & Features Section (Individual Cards) -->
+  <section id="tech-features" class="py-4">
+    <div class="row no-gutters justify-content-center">
+      <div class="col-md-3 m-2 glass text-center feature">
+        <h5>Unparalleled Precision</h5>
+        <p>Experience unmatched accuracy with our cutting–edge sensor technology.</p>
+      </div>
+      <div class="col-md-3 m-2 glass text-center feature">
+        <h5>Seamless Integration</h5>
+        <p>Easily connect with multiple devices and platforms.</p>
+      </div>
+      <div class="col-md-3 m-2 glass text-center feature">
+        <h5>Intuitive Control</h5>
+        <p>Navigate digital interfaces with natural, fluid gestures.</p>
+      </div>
+      <div class="col-md-3 m-2 glass text-center feature">
+        <h5>All–Day Comfort</h5>
+        <p>Ergonomically designed for prolonged use without fatigue.</p>
+      </div>
+      <div class="col-md-3 m-2 glass text-center feature">
+        <h5>Future–Proof Technology</h5>
+        <p>Engineered to evolve with tomorrow’s innovations.</p>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Sensors & ESP32 Section -->
+  <section id="sensors-esp" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Technology</h2>
+      <div class="row g-4">
+        <!-- Hall Effect Sensor -->
+        <div class="col-md-4 mb-4">
+          <div class="sensor-card">
+            <div class="sensor-image">
+              <img src="assets/images/sensor1.jpg" alt="Hall Effect Sensor" class="img-fluid" />
+              <div class="sensor-title">
+                <h4>Hall Effect Sensor</h4>
+              </div>
+            </div>
+            <div class="sensor-info">
+              <p>
+                The <span class="highlight">Hall Effect Sensor</span> detects magnetic fields and converts them into electrical signals. It is 
+                widely used for <span class="highlight">proximity sensing, speed detection, and position tracking</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- IMU Sensor -->
+        <div class="col-md-4 mb-4">
+          <div class="sensor-card">
+            <div class="sensor-image">
+              <img src="assets/images/sensor2.jpg" alt="IMU Sensor" class="img-fluid" />
+              <div class="sensor-title">
+                <h4>IMU Sensor</h4>
+              </div>
+            </div>
+            <div class="sensor-info">
+              <p>
+                The <span class="highlight">MPU6050</span> is a 6-axis IMU (Inertial Measurement Unit) with a <span class="highlight">3-axis gyroscope</span> and <span class="highlight">3-axis accelerometer</span>.  
+                It features an integrated <span class="highlight">Digital Motion Processor</span> for motion tracking.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ESP32 Section -->
+        <div class="col-md-4 mb-4">
+          <div class="sensor-card">
+            <div class="sensor-image">
+              <img src="assets/images/esp32.jpg" alt="ESP32 Microcontroller" class="img-fluid" />
+              <div class="sensor-title">
+                <h4>ESP32</h4>
+              </div>
+            </div>
+            <div class="sensor-info">
+              <p>
+                The <span class="highlight">ESP32</span> is a powerful microcontroller with <span class="highlight">Wi-Fi and Bluetooth</span> capabilities.  
+                It features a <span class="highlight">dual-core processor</span> and supports 
+                <span class="highlight">PWM, ADC, DAC, I2C, SPI, UART</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-4">
+    <div class="container glass text-center">
+      <h2 class="mb-4">Meet Our Team</h2>
+      <img src="assets/images/team.jpg" alt="Team" class="img-fluid rounded-circle mb-3" style="max-width: 200px;" />
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="p-2 m-2 team-member border">
+          <h6>Mentor: Dr. Sundaresan P</h6>
+          <a href="https://www.linkedin.com/in/dr-sundaresan-p-796016194/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <div class="p-2 m-2 team-member border">
+          <h6>Sri Harsha Kota</h6>
+          <a href="https://www.linkedin.com/in/sri-harsha-kota-32749b349/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <div class="p-2 m-2 team-member border">
+          <h6>Saketh Sriram K</h6>
+          <a href="https://www.linkedin.com/in/saketh-sreeram-kommaddi-3a5739268/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <div class="p-2 m-2 team-member border">
+          <h6>M Eswar</h6>
+          <a href="https://www.linkedin.com/in/mrudangam-eswar-904651268/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <div class="p-2 m-2 team-member border">
+          <h6>Saiteja M</h6>
+          <a href="https://www.linkedin.com/in/saiteja-muvvala-98a5ba2b8/" target="_blank">LinkedIn Profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-4">
+    <div class="container glass text-center">
+      <h2 class="mb-4">Contact Us</h2>
+      <p>Have any questions? Get in touch for more information or support.</p>
+      <p>
+        Email: <a href="mailto:sriharshakota2004@gmail.com">sriharshakota2004@gmail.com</a> | 
+        LinkedIn: <a href="https://www.linkedin.com/in/sri-harsha-kota-32749b349/" target="_blank">Profile</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Glide Smart Glove. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
